@@ -86,13 +86,12 @@ jobs:
 
         with:
 
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
           publish_dir: ./dist
 
-          publish_branch: gh-pages
+          publish_branch: output
 
           # Optionally, you can set a custom commit message
 
           commit_message: "Update snake animation [skip ci]"
-
